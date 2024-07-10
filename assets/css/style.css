@@ -31,21 +31,19 @@ margin: 2em .5em;
     background-color: #0dcaf0;
     color: aliceblue;
     font-size: .8em;
-    padding: .5em 0.1em;
+    padding: .5em 1.5em;
+    display: flex;
 }
+
+#destacados{
+    padding-left: 15em;
+}
+
 .card {
-    height: 3em;
+    height: 30em;
     border-color: #ffffff;
     background-color: #0dcaf0;
     color: #ffffff;
-}
-
-.card img {
-    height: 10em;
-}
-
-.card-group{
-    height: 28em;
 }
 
 .btn_form{
