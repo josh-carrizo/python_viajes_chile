@@ -35,9 +35,10 @@ margin: 2em .5em;
     display: flex;
 }
 
-#destacados{
-    padding-left: 15em;
+#destacados img{
+    height: 12em;
 }
+
 
 .card {
     height: 30em;

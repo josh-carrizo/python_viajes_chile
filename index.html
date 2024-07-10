@@ -49,30 +49,30 @@
     </div>
   </nav>
   <header>
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="4000">
           <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="4000">
           <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="4000">
           <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </header>
   <section id="ab_us">
-    <h2 class="text-center">¿Quiénes somos?</h2>
+    <h2 class="text-center mb-8">¿Quiénes somos?</h2>
     <div class="container mb-5">
       <div class="row ">
         <div class="col row ab_info">
@@ -107,8 +107,8 @@
   <section id="destacados">
     <h2 class="text-center">Destacados</h2>
     
-    <div class="card-group container  row-cols-4">
-      <div class="col">
+    <div class="card-group container row-cols-4 ">
+      <div class="col d-none d-sm-block">
         <div class="card m-2 ">
           <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -120,9 +120,9 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col d-none d-sm-block">
         <div class="card m-2 ">
-          <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+          <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam laboriosam facere
@@ -132,9 +132,9 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col d-none d-sm-block">
         <div class="card m-2 ">
-          <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+          <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam laboriosam facere
@@ -144,9 +144,9 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col d-none d-sm-block">
         <div class="card m-2 ">
-          <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+          <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam laboriosam facere
@@ -176,21 +176,50 @@
           <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn_form btn ">Enviar</button>
+        <button 
+          type="submit" 
+          class="btn_form btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right" 
+          data-bs-title="Presiona enviar para comunicarte con nosotros">Enviar</button>
       </form>
     </div>
   </section>
 
   <footer>
     <div id="footr" class="row">
-      <div class="col-2"></div>
+      <div class="col-2"> </div>
       <h3 class="col-4">VIAJES CHILE</h3>
       <div class="col-2"></div>
       <div class=" col-4">
-        <a href="#"><i class="icon-400 fa-brands fa-square-github"></i></a>
-        <a href="#"><i class="iconos_rrss fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="iconos_rrss fa-brands fa-square-twitter"></i></a>
-        <a href="#"><i class="iconos_rrss fa-brands fa-square-facebook"></i></a>
+        <a href="#"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom" 
+          data-bs-title="Siguenos en Github">
+            <i class="icon-400 fa-brands fa-square-github">
+            </i>
+          </a>
+        <a href="#"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom" 
+        data-bs-title="Siguenos en Linkedin">
+          <i class="iconos_rrss fa-brands fa-linkedin"> 
+          </i>
+        </a>
+        <a href="#"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom" 
+        data-bs-title="Siguenos en Twitter">
+          <i class="iconos_rrss fa-brands fa-square-twitter">
+          </i>
+        </a>
+        <a href="#"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom" 
+        data-bs-title="Siguenos en Facebook">
+          <i class="iconos_rrss fa-brands fa-square-facebook">
+          </i>
+        </a>
       </div>
     </div>
   </footer>
@@ -198,6 +227,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
+
 </body>
 
 </html>
