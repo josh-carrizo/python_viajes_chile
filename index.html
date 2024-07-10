@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-transparent " data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <h3> <img class="logo_viaje" src="assets/img/viajes.svg" alt="logo_viaje"> Viajes Chile</h3>
@@ -34,16 +34,24 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#"  data-bs-toggle="tooltip"
+            data-bs-placement="bottom" 
+            data-bs-title="Te llevo al inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fuentecabinbold" href="#ab_us">Quienes somos</a>
+            <a class="nav-link fuentecabinbold" href="#ab_us" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" 
+            data-bs-title="Conocenos un poco más">Quienes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fuentecabinbold" href="#destacados">Destacados</a>
+            <a class="nav-link fuentecabinbold" href="#destacados" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" 
+            data-bs-title="Conoce nuestras novedades">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fuentecabinbold" href="#contacto">Contacto</a>
+            <a class="nav-link fuentecabinbold" href="#contacto" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" 
+            data-bs-title="No dudes en hablarnos">Contacto</a>
           </li>
         </ul>
       </div>
@@ -77,27 +85,21 @@
     <div class="container mb-5">
       <div class="row ">
         <div class="col row ab_info">
-          <div class="col icono_ab"></div>
-          <div class="col icono_ab">
-            <i class=" fa-solid fa-plane"></i>
+          <div class=" icono_ab">
+            <i class=" col-12 text-center fa-solid fa-plane"></i>
           </div>
-          <div class="col icono_ab"></div>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repellendus eos aperiam! Eligendi, quam
             sit. Sequi cupiditate facere, molestiae, dolore harum ducimus aliquam vitae voluptas quia quam laudantium
             doloremque eligendi?</p>
         </div>
-        <div class="col row ab_info">
+        <div class="col  ab_info">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora a perspiciatis modi minima error
             amet eveniet sit quod. Enim perspiciatis fugit non magnam nesciunt dolorem quae aut! Quis, adipisci?</p>
-          <div class="col icono_ab"></div>
-          <div class="col icono_ab"><i class="fa-solid fa-mountain-sun"></i>
+          <div class="row icono_ab"><i class="col-12 text-center fa-solid fa-mountain-sun"></i>
           </div>
-          <div class=" icono_ab col"></div>
         </div>
-        <div class="col row ab_info">
-          <div class="col icono_ab"></div>
-          <div class="col icono_ab"> <i class="fa-solid fa-route"></i> </div>
-          <div class="col icono_ab"></div>
+        <div class="col  ab_info">
+          <div class="row icono_ab"> <i class="col-12 text-center fa-solid fa-route"></i> </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias porro, rerum aliquam itaque voluptatem
             doloribus doloremque eos consequatur velit natus officiis quam consectetur laudantium dolores iure saepe
             commodi. Est, quos?</p>
@@ -106,7 +108,7 @@
     </div>
   </section>
   <section id="destacados">
-    <h2 class="text-center">Destacados</h2>
+    <h2 class="text-center mb-4">Destacados</h2>
     
     <div class="card-group container row-cols-4 ">
       <div class="col d-none d-sm-block">
@@ -166,16 +168,16 @@
       <form>
         <div class="mb-3">
           <label for="formGroupExampleInput" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="formGroupExampleInput">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre">
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label">Asunto</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2">
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingresa el asunto">
         </div>
 
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Cuéntanos en que te podemos ayudar" rows="3"></textarea>
         </div>
         <button 
           type="submit" 
