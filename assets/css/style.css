@@ -1,0 +1,71 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+.logo_viaje{
+    width: 1.5em;
+}
+
+.navbar {
+    position:absolute;
+    top:0;
+    z-index:10;
+    width:100%;
+}
+
+.carousel {
+    top:0;
+}
+
+.ab_info{
+margin: 2em .5em;
+}
+
+.icono_ab{
+    background-color: #0dcaf0;
+    color: aliceblue;
+    font-size: .8em;
+    padding: .5em 0.1em;
+}
+.card {
+    height: 3em;
+    border-color: #ffffff;
+    background-color: #0dcaf0;
+}
+
+.card img {
+    height: 10em;
+}
+
+.card-group{
+    height: 28em;
+}
+
+.btn_form{
+    background-color:#0dcaf0;
+    color: beige;
+}
+
+footer {
+    background-color: #0dcaf0;
+    padding: 2.5em;
+    color: beige;
+}
+
+#ab_us , #destacados , #contacto{
+    background-color: black;
+    color: beige;
+    padding: 2em 0em;
+}
+
+i {
+    color:#ffffff;
+    font-size: 2em;
+    margin: 0rem .5rem;
+}
